@@ -18,7 +18,6 @@
     transform: translate(-50%,-50%);
     width: 40%;
 }
-/*----------------------------------------------------------*/
 form{
     position: relative;
     margin:10px 10%;
@@ -92,12 +91,10 @@ table tr td #RegisterId:hover{
     background: rgb(44, 44, 44);
 }
 
-
+/*-------------------------       Responsive layout              ---------------------------------*/
 @media screen and (max-width:767px)
 {
-    body{
-        color:red;
-    }
+
     form{
         position: relative;
         margin: 5px 0.5%;
