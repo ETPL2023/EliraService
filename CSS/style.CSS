@@ -128,4 +128,8 @@ table tr td #RegisterId:hover{
         text-align: left;
         margin: 10px 0px;
     }
+    table tr td select {
+    height: 100%;
+    width: 80%;
+}
 }
