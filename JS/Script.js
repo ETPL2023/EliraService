@@ -20,18 +20,16 @@ function populate(s1,s2){
 		s2.options.add(newOption);
 	}
 }
-
-
-    function Complain(){    
+/*---------------------------------------Null Case Code------------------------------------------*/
+function Complain(){    
         var Name = document.getElementById('name');
         var addr = document.getElementById('addr');
         var phone = document.getElementById('phone');
         var fl = document.getElementById('fl');
-        var d = new Date();
-        var Btn = document.getElementById('RegisterId');
-        if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
+       
+
+    if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
         {
-            document.getElementById("out").innerHTML = d.getDate()+"0"+(d.getMonth()+1)+"ETPL"+d.getMinutes()+d.getMilliseconds();
             document.getElementById("Rid-block").style.display="block";
             document.getElementById("Readnote").style.display="block";
             document.getElementById("Rid-block").style.padding="30px 0px";
@@ -40,9 +38,40 @@ function populate(s1,s2){
         }
         else
         {
-            alert("Please Fill the Form");
-            
+            alert("Please Fill the Form"); 
         }
 }
+/*---------------------------------------Input number Case ------------------------------------------*/
+function numberonly(input){
+    var num = /[^0-9]/gi;
+    input.value = input.value.replace(num,"");
+}
 
+/*---------------------------------------Complaint id ------------------------------------------*/
+var d = new Date();
+var gdate = d.getDate();
+var gmon = d.getMonth(); 
+var gh = d.getHours();
+var gm = d.getMinutes();
+var gs = d.getSeconds();
+var fd,fmon,fh,fm,fs;
+
+if(gdate.toString().length == 1){
+    gdate = "0"+gdate;
+}
+if(gmon.toString().length == 1){
+    gmon = "0"+(gmon+1);
+}
+if(gh.toString().length == 1){
+    gh = "0"+gh; 
+}
+if(gm.toString().length == 1){
+    gm = "0"+gm;
+}
+if(gs.toString().length == 1){
+    gs = "0"+gs;
+    
+}
+document.getElementById('out').innerHTML=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
+console.log(gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs);
 
