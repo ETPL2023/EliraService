@@ -12,7 +12,7 @@
     <div id="preload">
         <img id="Logo" src="./Image/Logo.png" alt="Logo">
     </div>
-    <form method="get" id="form">
+    <form method="get" id="form" action="https://script.google.com/macros/s/AKfycbyDPQumwdhpoEgtpPirSdUxPMHKp9x-KR61pg66zGmPYVmCtVW6VP2N3WsTLMBac9epdQ/exec">
         <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
         <div class="note">
         <h1>Complain Form</h1>
@@ -24,28 +24,28 @@
            <tbody id="tbody">
                 <tr>
                     <td>Customer Name</td>
-                    <td><input type="text" placeholder="Enter Your Name" required id="name"></td>
+                    <td><input type="text" placeholder="Enter Your Name" required id="name" name="Name"></td>
                 </tr>
     
                 <tr>
                     <td>Customer Address</td>
-                    <td><input type="text" placeholder="Enter Your Address" required id="addr"></td>
+                    <td><input type="text" placeholder="Enter Your Address" required id="addr" name="Address"></td>
                 </tr>
                
                 <tr>
                     <td>Pincode</td>
-                    <td><input type="text" placeholder="Enter Pincode" required id="Pin" maxlength="6" onkeyup="numberonly(this)"></td>
+                    <td><input type="text" placeholder="Enter Pincode" required id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
                 </tr>
     
                 <tr>
                     <td>Customer Phone</td>
-                    <td><input type="text" placeholder="Enter Your Phone Number" required id="phone" maxlength="10" onkeyup="numberonly(this)"></td>
+                    <td><input type="text" placeholder="Enter Your Phone Number" required id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
                 </tr>
     
                 <tr>
                     <td>Product</td>
                     <td>
-                        <Select id="product" name="product" onchange="populate(this.id,'Product-model')">
+                        <Select id="product" name="product" onchange="populate(this.id,'Product-model')" name="Product">
                             <option value="None">Select Product</option>
                             <option value="LED-TV">LED TV</option>
                             <option value="Washing Machine">Washing Machine</option>
@@ -57,7 +57,7 @@
                 <tr>
                     <td>Product Model number</td>
                     <td>
-                        <Select id="Product-model" name="Product-model">
+                        <Select id="Product-model" name="Product-model" name="Product model">
                             <option value="None">Select Model</option>
                         </Select>
                     </td>
@@ -65,17 +65,17 @@
     
                 <tr>
                     <td>Issue in Product</td>
-                    <td><input type="text" placeholder="Explain the defect in product"></td>
+                    <td><input type="text" placeholder="Explain the defect in product" name="Issue"></td>
                 </tr>
     
                 <tr>
                     <td>Product Sr number</td>
-                    <td><input type="text" placeholder="Enter Serial Number"></td>
+                    <td><input type="text" placeholder="Enter Serial Number" name="Product Sr-number"></td>
                 </tr>
     
                 <tr>
                     <td>ASP Name/FL</td>
-                    <td><input type="text" placeholder="Enter ASP Name" required id="fl"></td>
+                    <td><input type="text" placeholder="Enter ASP Name" required id="fl" name="ASP Name"></td>
                 </tr>
     
          
@@ -88,7 +88,7 @@
                 </tr>
                 <tr id="Rid-block" style="display:none;">
                     <td>Your Complaint ID</td>
-                    <td><label id="out">Requesting Complaint ID</label></td>
+                    <td><label id="out">Requesting Complaint ID</label name="Complaint Id"></td>
                 </tr>
                 <tr id="btn-block">
                     <td style="background:none"></td><td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
