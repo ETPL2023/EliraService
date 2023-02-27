@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Image/Logo.png">
     <link rel="stylesheet" href="./CSS/style.CSS">
-    <title>Complain Form</title>
+    <title>Elira Complain Service</title>
 </head>
 <body>
     <div id="preload">
@@ -15,7 +15,7 @@
     <form method="get" id="form">
         <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
         <div class="note">
-        <h2>Complain Form</h2>
+        <h1>Complain Form</h1>
         <p>Please fill out the following form with your</p>
         <p>complaint. We will review your request and follow</p>
         <p>uo with you as soon as possible</p>
@@ -34,12 +34,12 @@
                
                 <tr>
                     <td>Pincode</td>
-                    <td><input type="text" placeholder="Enter Pincode" required id="Pin"></td>
+                    <td><input type="text" placeholder="Enter Pincode" required id="Pin" maxlength="6" onkeyup="numberonly(this)"></td>
                 </tr>
     
                 <tr>
                     <td>Customer Phone</td>
-                    <td><input type="text" placeholder="Enter Your Phone Number" required id="phone"></td>
+                    <td><input type="text" placeholder="Enter Your Phone Number" required id="phone" maxlength="10" onkeyup="numberonly(this)"></td>
                 </tr>
     
                 <tr>
@@ -88,7 +88,7 @@
                 </tr>
                 <tr id="Rid-block" style="display:none;">
                     <td>Your Registration ID</td>
-                    <td><label id="out">Requesting Registration ID</label> <input type="text" id="counter" value="1" style="display:none"></td>
+                    <td><label id="out">Requesting Registration ID</label></td>
                 </tr>
                 <tr id="btn-block">
                     <td style="background:none"></td><td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
