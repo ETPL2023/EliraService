@@ -131,5 +131,8 @@ table tr td #RegisterId:hover{
     table tr td select {
     height: 100%;
     width: 80%;
-}
+    }
+    table tr td #RegisterId {
+    color:black;
+    }
 }
