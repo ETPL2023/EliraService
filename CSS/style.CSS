@@ -36,6 +36,24 @@
     }
 }
 
+
+.dots-5 {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: d5 1s infinite linear alternate;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);
+  }
+  @keyframes d5 {
+      0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+      33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+      66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+      100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+  }
+
 form{
     background: white;
     position: relative;
@@ -114,6 +132,10 @@ table tr td #RegisterId:hover{
 @media screen and (max-width:767px)
 {
 
+    
+.dots-5 {
+    top: 50%;
+  }
     form{
         position: relative;
         margin: 5px 0.5%;
