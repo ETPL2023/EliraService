@@ -63,9 +63,8 @@ form{
 #title-logo{
     height: 100px;
     position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);    
+    left: 50%;
+    transform: translate(-50%,0%);
 }
 .note{
     background: #989b9c;
