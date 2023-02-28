@@ -35,6 +35,7 @@ function Complain(){
             document.getElementById("Readnote").style.display="block";
             document.getElementById("Rid-block").style.padding="30px 0px";
             document.getElementById("btn-block").style="display:none";
+	    document.getElementById("preload").style="display:none";
             document.getElementById("tbody").style="display:none";
         }
         else
