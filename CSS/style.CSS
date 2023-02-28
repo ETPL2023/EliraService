@@ -57,7 +57,7 @@
 form{
     background: white;
     position: relative;
-    margin:10px 10%;
+    margin:0px 10%;
 }
 
 #title-logo{
@@ -176,4 +176,19 @@ table tr td #RegisterId:hover{
     table tr td #RegisterId {
     color:black;
     }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px)
+{  
+.dots-5 {
+    top: 50%;
+  }
+
+}
+@media screen and (min-width:1024px)
+{  
+.dots-5 {
+    top: 4%;
+  }
+
 }
