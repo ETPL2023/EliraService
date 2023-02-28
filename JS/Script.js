@@ -30,6 +30,7 @@ function Complain(){
 
     if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
         {
+	alert("Your Complaint is sent");
             document.getElementById("Rid-block").style.display="block";
             document.getElementById("Readnote").style.display="block";
             document.getElementById("Rid-block").style.padding="30px 0px";
