@@ -13,7 +13,7 @@
         <img id="Logo" src="./Image/Logo.png" alt="Logo">
         <div class="dots-5"></div>
     </div>
-    <form method="POST" id="form" autocomplete="off" name="Elira Complain Service">
+    <form method="POST" id="form" name="ETPL Form"><!-- action="https://script.google.com/macros/s/AKfycbyN05d2UHtnC1VWnFf1i1soOcXl3Qeo1DMu_PhSlbik/dev"-->
         <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
         <div class="note">
         <h1>Complain Form</h1>
@@ -46,21 +46,24 @@
                 <tr>
                     <td>Product</td>
                     <td>
-                        <Select id="product" name="product" onchange="populate(this.id,'Product-model')" name="Product">
+                        <Select id="product" name="product" onchange="populate(this.id,'Product-model')">
                             <option value="None">Select Product</option>
                             <option value="LED-TV">LED TV</option>
                             <option value="Washing Machine">Washing Machine</option>
                             <option value="Cooler">Air Cooler</option>
                         </Select>
+                        <span><input type="text" name="Product" id="P-out"></span>
                     </td>
                 </tr>
     
                 <tr>
                     <td>Product Model number</td>
                     <td>
-                        <Select id="Product-model" name="Product-model" name="Product model">
+                        <Select id="Product-model" onchange="PMselect()">
                             <option value="None">Select Model</option>
                         </Select>
+                        <span><input type="text" name="Product model" id="PM-out"></span>
+
                     </td>
                 </tr>
     
@@ -89,7 +92,7 @@
                 </tr>
                 <tr id="Rid-block" style="display:none;">
                     <td>Your Complaint ID</td>
-                    <td><label id="out">Requesting Complaint ID</label name="Complaint Id"></td>
+                    <td><label id="out1">Requesting Complaint ID</label>   <input id="out2" type="text" name="Complaint Id"></td>
                 </tr>
                 <tr id="btn-block">
                     <td style="background:none"></td><td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
@@ -97,19 +100,6 @@
          
         </table>
     </form>
-    <script src="./JS/Script.js"></script>  
-
-	<script>
-       		const scriptURL = 'https://script.google.com/macros/s/AKfycbxEdhQaP-oEzT1jqhLB8oXUb5I04FItGAj3F5KXGyJ8eARuhT9cH0ck-1oqSrrLUXxIbA/exec'
-        	const form = document.forms['Elira Complain Service']
-
-    		form.addEventListener('submit', e => {
-    		e.preventDefault()
-    		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    		.then(response =>  alert("Thanks for Your feedback"))
-    		.catch(error => console.error('Error!', error.message))
-		})
-    	</script>
-	
+    <script src="./JS/Script.js"></script>
 </body>
 </html>
