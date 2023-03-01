@@ -13,7 +13,7 @@
         <img id="Logo" src="./Image/Logo.png" alt="Logo">
         <div class="dots-5"></div>
     </div>
-    <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycbwuKHuMtn9BASp6v8axGkQWEdHH4JehZEjMOjXpl5JYrDRadht13xzJhk5_38lXnTjYww/exec">
+    <form method="POST" id="form" autocomplete="off" name="Elira Complain Service">
         <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
         <div class="note">
         <h1>Complain Form</h1>
@@ -98,5 +98,18 @@
         </table>
     </form>
     <script src="./JS/Script.js"></script>
+    <script>  
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwa_vULKGFo_ybvRztPvSPZbc4WBsGfe4NDyI62RNmnFbpLsjC3OPujiY4mkK8aoa6K4A/exec'
+        const form = document.forms['Elira Complain Service']
+
+    form.addEventListener('submit', e => {
+     e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => document.getElementById("indicate").innerHTML="Feedback received.", alert("Thanks for Your feedback"))
+    .catch(error => console.error('Error!', error.message))
+})
+    
+  
+    
 </body>
 </html>
