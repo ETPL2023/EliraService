@@ -1,33 +1,3 @@
-/*---------------------------------------Complaint id ------------------------------------------*/
-var d = new Date();
-var gdate = d.getDate();
-var gmon = d.getMonth(); 
-var gh = d.getHours();
-var gm = d.getMinutes();
-var gs = d.getSeconds();
-var fd,fmon,fh,fm,fs;
-
-if(gdate.toString().length == 1){
-    gdate = "0"+gdate;
-}
-if(gmon.toString().length == 1){
-    gmon = "0"+(gmon+1);
-}
-if(gh.toString().length == 1){
-    gh = "0"+gh; 
-}
-if(gm.toString().length == 1){
-    gm = "0"+gm;
-}
-if(gs.toString().length == 1){
-    gs = "0"+gs;
-    
-}
-document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
-console.log(gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs);
-document.getElementById('out2').value=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
-
-
 /*---------------------------------------Product array ------------------------------------------*/
 
 function PMselect(){
@@ -74,25 +44,46 @@ function Complain(){
         var phone = document.getElementById('phone');
 	var phone = document.getElementById('altphone');
         var fl = document.getElementById('fl');
-       
-
-
     if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
         {
-             const scriptURL = 'https://script.google.com/macros/s/AKfycbxJQjCjvIdtmfyZsr1lNEqk60EkaQkLr0y17n2GY3zUz9I7O17Rn0li8bBrCu6lJyKR/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxJQjCjvIdtmfyZsr1lNEqk60EkaQkLr0y17n2GY3zUz9I7O17Rn0li8bBrCu6lJyKR/exec'
             const form = document.forms['ETPL Form']
-
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Your complaint is received. Please Save your complaint number for the future." ))
             .catch(error => console.error('Error!', error.message))
-
-
             document.getElementById("Rid-block").style.display="block";
             document.getElementById("Readnote").style.display="block";
+	    document.getElementById("Goback").style.display="block";
             document.getElementById("Rid-block").style.padding="30px 0px";
             document.getElementById("btn-block").style="display:none";
             document.getElementById("preload").style="display:none";
             document.getElementById("tbody").style="display:none";
+	/*---------------------------------------Complaint id ------------------------------------------*/
+	var d = new Date();
+	var gdate = d.getDate();
+	var gmon = d.getMonth(); 
+	var gh = d.getHours();
+	var gm = d.getMinutes();
+	var gs = d.getSeconds();
+	var fd,fmon,fh,fm,fs;
+	if(gdate.toString().length == 1){
+	    gdate = "0"+gdate;
+	}
+	if(gmon.toString().length == 1){
+	    gmon = "0"+(gmon+1);
+	}
+	if(gh.toString().length == 1){
+	    gh = "0"+gh; 
+	}
+	if(gm.toString().length == 1){
+	    gm = "0"+gm;
+	}
+	if(gs.toString().length == 1){
+	    gs = "0"+gs;  
+	}
+	document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
+	document.getElementById('out2').value=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
+	/*---------------------------------------Complaint id ------------------------------------------*/		
         }
         else
         {
