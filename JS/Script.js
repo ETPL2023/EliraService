@@ -39,16 +39,15 @@ function PMselect(){
 function populate(s1,s2){
 	var s1 = document.getElementById(s1);
 	var s2 = document.getElementById(s2);
-    var P = document.getElementById("product");
-    var displayP = P.options[P.selectedIndex].text;
-
+    	var P = document.getElementById("product");
+    	var displayP = P.options[P.selectedIndex].text;
 
 	s2.innerHTML = "";
 	if(s1.value == "Washing Machine"){
-		 var optionArray = ["Select Model|Select Model","WM|Elira WM 6.5KG Std (ESAWM650SRWR)","WM|Elira WM 6.8KG Half Glass (ESAWM680HGBR)","WM|Elira WM 7KG Full Glass (ESAWM700FGFL)","WM|Elira WM 8KG FG Soft Closer (ESAWM800FGBG)","WM|Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)","WM|Elira WM 10KG FG BLACK (ESAWM100FGWB)","WM|Elira Washing Machine 6.5 KG(ESAWM650OPWP)","WM|Elira Washing Machine 7.0 KG(ESAWM700FGWR)","WM|Elira Washing Machine 8.0 KG(ESAWM800FGWP)","WM|Elira Washing Machine 9.0 KG(ESAWM900FGWB)"];
-         document.getElementById('P-out').value = displayP;
-         
-    } else if(s1.value == "LED-TV"){
+	var optionArray = ["Select Model|Select Model","WM|Elira WM 6.5KG Std (ESAWM650SRWR)","WM|Elira WM 6.8KG Half Glass (ESAWM680HGBR)","WM|Elira WM 7KG Full Glass (ESAWM700FGFL)","WM|Elira WM 8KG FG Soft Closer (ESAWM800FGBG)","WM|Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)","WM|Elira WM 10KG FG BLACK (ESAWM100FGWB)","WM|Elira Washing Machine 6.5 KG(ESAWM650OPWP)","WM|Elira Washing Machine 7.0 KG(ESAWM700FGWR)","WM|Elira Washing Machine 8.0 KG(ESAWM800FGWP)","WM|Elira Washing Machine 9.0 KG(ESAWM900FGWB)"];
+        document.getElementById('P-out').value = displayP;    
+    } 
+	else if(s1.value == "LED-TV"){
 		var optionArray = ["Select Model|Select Model","LED|Elira SMART LED HD TV 32inch (32EL3304AYU4)","Elira LED|Elira SMART LED HD TV 32inch (32EL3404AYU4)","LED|Elira SMART LED Full HD TV 43inch (43EL4304AYU4)","LED|Elira SMART LED Full HD TV 43inch (43EL4404AYU4)","LED|Elira SMART LED UHD TV 50inch (50EL5102AZV4)","LED|Elira SMART LED UHD TV 55inch (55EL5502AZV4)"];
         document.getElementById('P-out').value = displayP;
        
