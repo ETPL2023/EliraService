@@ -14,100 +14,90 @@
         <img id="Logo" src="./Image/Logo.png" alt="Logo">
         <div class="dots-5"></div>
     </div>
-    <div id="Wall">
-    </div><div id="Content"><form method="POST" id="form" name="ETPL Form">
-        <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
-        <div class="note">
-        <h1>Complain Form</h1>
-        <p>Please fill out the following form with your</p>
-        <p>complaint. We will review your request and follow</p>
-        <p>up with you as soon as possible</p>
-        </div>
-        <table>
-           <tbody id="tbody">
-                <tr>
-                    <td>Customer Name</td>
-                    <td><input type="text" placeholder="Enter Your Name" required="" id="name" name="Name"></td>
-                </tr>
-    
-                <tr>
-                    <td>Customer Address</td>
-                    <td><input type="text" placeholder="Enter Your Address" required="" id="addr" name="Address"></td>
-                </tr>
-               
-                <tr>
-                    <td>Pincode</td>
-                    <td><input type="text" placeholder="Enter Pincode" required="" id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
-                </tr>
-    
-                <tr>
-                    <td>Customer Phone</td>
-                    <td><input type="text" placeholder="Enter Your Phone Number" required="" id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
-                </tr>
-               
-                <tr>
-                    <td>Alternate Phone</td>
-                    <td><input type="text" placeholder="Enter Alternate Phone Number" required="" id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
-                </tr>
-    
-                <tr>
-                    <td>Product</td>
-                    <td>
-                        <select id="product" name="product" onchange="populate(this.id,'Product-model')">
-                            <option value="None">Select Product</option>
-                            <option value="LED-TV">LED TV</option>
-                            <option value="Washing Machine">Washing Machine</option>
-                            <option value="Cooler">Air Cooler</option>
-                        </select>
+    <div id="Wall"></div>
+    <div id="Content">
+        <form method="POST" id="form" name="ETPL Form">
+            <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
+            <div class="note">
+                <h1>Complain Form</h1>
+                <p>Please fill out the following form with your</p>
+                <p>complaint. We will review your request and follow</p>
+                <p>up with you as soon as possible</p>
+            </div>
+            <table>
+                <tbody id="tbody">
+                    <tr>
+                        <td>Customer Name</td>
+                        <td><input type="text" placeholder="Enter Your Name" required="" id="name" name="Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Address</td>
+                        <td><input type="text" placeholder="Enter Your Address" required="" id="addr" name="Address"></td>
+                    </tr>
+                    <tr>
+                        <td>Pincode</td>
+                        <td><input type="text" placeholder="Enter Pincode" required="" id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Phone</td>
+                        <td><input type="text" placeholder="Enter Your Phone Number" required="" id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Alternate Phone</td>
+                        <td><input type="text" placeholder="Enter Alternate Phone Number" required="" id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Product</td>
+                        <td>
+                            <select id="product" name="product" onchange="populate(this.id,'Product-model')">
+                                <option value="None">Select Product</option>
+                                <option value="LED-TV">LED TV</option>
+                                <option value="Washing Machine">Washing Machine</option>
+                                <option value="Cooler">Air Cooler</option>
+                            </select>
                         <span><input type="text" name="Product" id="P-out"></span>
-                    </td>
-                </tr>
-    
-                <tr>
-                    <td>Product Model number</td>
-                    <td>
-                        <select id="Product-model" onchange="PMselect()">
-                            <option value="None">Select Model</option>
-                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Model number</td>
+                        <td>
+                            <select id="Product-model" onchange="PMselect()">
+                                <option value="None">Select Model</option>
+                            </select>
                         <span><input type="text" name="Product model" id="PM-out"></span>
-
-                    </td>
-                </tr>
-    
-                <tr>
-                    <td>Issue in Product</td>
-                    <td><input type="text" placeholder="Explain the defect in product" name="Issue"></td>
-                </tr>
-    
-                <tr>
-                    <td>Product Sr number (Optional)</td>
-                    <td><input type="text" placeholder="Enter Serial Number" name="Product Sr-number"></td>
-                </tr>
-    
-                <tr>
-                    <td>ASP Name/FL</td>
-                    <td><input type="text" placeholder="Enter ASP Name" required="" id="fl" name="ASP Name"></td>
-                </tr>
-    
-         
-            </tbody>
-            
-                <tbody><tr id="Readnote" style="display: none;">
-                    <td>
-                        <h1>Thankyou for connect with Elira</h1>
-                    </td>
-                </tr>
-                <tr id="Rid-block" style="display:none;">
-                    <td>Your Complaint ID</td>
-                    <td><label id="out1">0203ETPL134247</label>   <input id="out2" type="text" name="Complaint Id"></td>
-                </tr>
-                <tr id="btn-block">
-                    <td style="background:none"></td><td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
-                </tr>                
-         
-        </tbody></table>
-    </form>
-    
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Issue in Product</td>
+                        <td><input type="text" placeholder="Explain the defect in product" name="Issue"></td>
+                    </tr>
+                    <tr>
+                        <td>Product Sr number (Optional)</td>
+                        <td><input type="text" placeholder="Enter Serial Number" name="Product Sr-number"></td>
+                    </tr>
+                    <tr>
+                        <td>Dealer Name</td>
+                        <td><input type="text" placeholder="Enter Dealer Name" required="" id="fl" name="Dealer Name"></td>
+                    </tr>
+                </tbody> 
+                <tfoot>
+                    <tr id="Readnote" style="display: none;">
+                        <td>
+                        <h2>Thank you for connect with Elira</h2>
+                        </td>
+                    </tr>
+                    <tr id="Rid-block" style="display:none;">
+                        <td>Your Complaint ID</td>
+                        <td><label id="out1">0203ETPL134247</label>   <input id="out2" type="text" name="Complaint Id"></td>
+                    </tr>
+                    <tr id="btn-block">
+                        <td style="background:none"></td>
+                        <td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
+                    </tr>                
+                </tfoot>
+            </table>
+            <input type="button" id="Goback" onclick="window.location.reload()" value="Register Another Complain">
+        </form>
     </div>
     <script src="./JS/Script.js"></script>
 </body>
