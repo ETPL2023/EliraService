@@ -84,8 +84,7 @@ function Complain(){
             const form = document.forms['ETPL Form']
 
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank you! your complaint is received. Please Save your complaint Id for the future." ))
-            .then(() => {  window.location.reload(); })
+            .then(response => alert("Your complaint is received. Please Save your complaint number for the future." ))
             .catch(error => console.error('Error!', error.message))
 
 
