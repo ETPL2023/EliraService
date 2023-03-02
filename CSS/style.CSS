@@ -6,22 +6,22 @@
     display:none;
 }
 
-#Wall{
+#Wall1{
     background: white; 
     position: absolute;  
     width: 100%; 
     height: 100%;
     z-index: -1;
     }
-#preload{
-background: white;
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: -5;
-animation-name: preload;
-animation-duration: 5s;
+#Wall2 {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 1;
 }
+#preload{background: white;position: absolute;width: 100%;height: 100%;z-index: -5;animation-name: preload;animation-duration: 5s;}
 #Logo{
     position: relative;
     top:50%;
