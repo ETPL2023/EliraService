@@ -79,7 +79,7 @@ function Complain(){
         var Name = document.getElementById('name');
         var addr = document.getElementById('addr');
         var phone = document.getElementById('phone');
-	var phone = document.getElementById('altphone');
+	var altphone = document.getElementById('altphone');
         var fl = document.getElementById('fl');
 	
     if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
