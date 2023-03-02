@@ -1,3 +1,9 @@
+/*---------------------------------------Input number Case ------------------------------------------*/
+function numberonly(input){
+    var num = /[^0-9]/gi;
+    input.value = input.value.replace(num,"");
+}
+/*---------------------------------------Input number Case ------------------------------------------*/
 /*---------------------------------------Product array ------------------------------------------*/
 
 function PMselect(){
@@ -37,31 +43,7 @@ function populate(s1,s2){
 		s2.options.add(newOption);
 	}
 }
-/*---------------------------------------Null Case Code------------------------------------------*/
-function Complain(){    
-        var Name = document.getElementById('name');
-        var addr = document.getElementById('addr');
-        var phone = document.getElementById('phone');
-	var phone = document.getElementById('altphone');
-        var fl = document.getElementById('fl');
-	
-    if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
-        {
-       	const scriptURL = 'https://script.google.com/macros/s/AKfycbxJQjCjvIdtmfyZsr1lNEqk60EkaQkLr0y17n2GY3zUz9I7O17Rn0li8bBrCu6lJyKR/exec'
-        const form = document.forms['ETPL Form']
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Your complaint is received. Please Save your complaint number for the future." ))
-        .catch(error => console.error('Error!', error.message))
-        document.getElementById("Rid-block").style.display="block";
-        document.getElementById("Readnote").style.display="block";
-	document.getElementById("Goback").style.display="block";
-        document.getElementById("Rid-block").style.padding="30px 0px";
-        document.getElementById("btn-block").style="display:none";
-        document.getElementById("preload").style="display:none";
-        document.getElementById("tbody").style="display:none";
-        }else
-        { alert("Please Fill the Form");
-        }
+/*---------------------------------------Product array ------------------------------------------*/
 /*---------------------------------------Complaint id ------------------------------------------*/
 	var d = new Date();
 	var gdate = d.getDate();
@@ -87,10 +69,31 @@ function Complain(){
 	}
 	document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
 	document.getElementById('out2').value=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
-/*---------------------------------------Complaint id ------------------------------------------*/		
+/*---------------------------------------Complaint id ------------------------------------------*/
+/*---------------------------------------Null Case Code------------------------------------------*/
+function Complain(){    
+        var Name = document.getElementById('name');
+        var addr = document.getElementById('addr');
+        var phone = document.getElementById('phone');
+	var phone = document.getElementById('altphone');
+        var fl = document.getElementById('fl');
+	
+    if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
+        {
+       	const scriptURL = 'https://script.google.com/macros/s/AKfycbxJQjCjvIdtmfyZsr1lNEqk60EkaQkLr0y17n2GY3zUz9I7O17Rn0li8bBrCu6lJyKR/exec'
+        const form = document.forms['ETPL Form']
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Your complaint is received. Please Save your complaint number for the future." ))
+        .catch(error => console.error('Error!', error.message))
+        document.getElementById("Rid-block").style.display="block";
+        document.getElementById("Readnote").style.display="block";
+	document.getElementById("Goback").style.display="block";
+        document.getElementById("Rid-block").style.padding="30px 0px";
+        document.getElementById("btn-block").style="display:none";
+        document.getElementById("preload").style="display:none";
+        document.getElementById("tbody").style="display:none";
+        }else
+        { alert("Please Fill the Form");
+        }		
 }
-/*---------------------------------------Input number Case ------------------------------------------*/
-function numberonly(input){
-    var num = /[^0-9]/gi;
-    input.value = input.value.replace(num,"");
-}
+/*---------------------------------------Null Case Code------------------------------------------*/
