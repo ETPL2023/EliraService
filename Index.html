@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Image/Logo.png">
     <link rel="stylesheet" href="./CSS/style.CSS">
     <title>Elira Complain Service</title>
 </head>
+
 <body>
     <div id="preload">
         <img id="Logo" src="./Image/Logo.png" alt="Logo">
         <div class="dots-5"></div>
     </div>
-    <div id="Wall">
-    </div>
-    <form method="POST" id="form" name="ETPL Form"><!-- action="https://script.google.com/macros/s/AKfycbyN05d2UHtnC1VWnFf1i1soOcXl3Qeo1DMu_PhSlbik/dev"-->
+    <div id="Wall1">
+    </div><div id="Wall2"><form method="POST" id="form" name="ETPL Form"><!-- action="https://script.google.com/macros/s/AKfycbyN05d2UHtnC1VWnFf1i1soOcXl3Qeo1DMu_PhSlbik/dev"-->
         <img id="title-logo" src="./Image/Elira Logo.png" alt="Elira Logo">
         <div class="note">
         <h1>Complain Form</h1>
@@ -27,38 +27,38 @@
            <tbody id="tbody">
                 <tr>
                     <td>Customer Name</td>
-                    <td><input type="text" placeholder="Enter Your Name" required id="name" name="Name"></td>
+                    <td><input type="text" placeholder="Enter Your Name" required="" id="name" name="Name"></td>
                 </tr>
     
                 <tr>
                     <td>Customer Address</td>
-                    <td><input type="text" placeholder="Enter Your Address" required id="addr" name="Address"></td>
+                    <td><input type="text" placeholder="Enter Your Address" required="" id="addr" name="Address"></td>
                 </tr>
                
                 <tr>
                     <td>Pincode</td>
-                    <td><input type="text" placeholder="Enter Pincode" required id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
+                    <td><input type="text" placeholder="Enter Pincode" required="" id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
                 </tr>
     
                 <tr>
                     <td>Customer Phone</td>
-                    <td><input type="text" placeholder="Enter Your Phone Number" required id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
+                    <td><input type="text" placeholder="Enter Your Phone Number" required="" id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
                 </tr>
                
                 <tr>
                     <td>Alternate Phone</td>
-                    <td><input type="text" placeholder="Enter Alternate Phone Number" required id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
+                    <td><input type="text" placeholder="Enter Alternate Phone Number" required="" id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
                 </tr>
     
                 <tr>
                     <td>Product</td>
                     <td>
-                        <Select id="product" name="product" onchange="populate(this.id,'Product-model')">
+                        <select id="product" name="product" onchange="populate(this.id,'Product-model')">
                             <option value="None">Select Product</option>
                             <option value="LED-TV">LED TV</option>
                             <option value="Washing Machine">Washing Machine</option>
                             <option value="Cooler">Air Cooler</option>
-                        </Select>
+                        </select>
                         <span><input type="text" name="Product" id="P-out"></span>
                     </td>
                 </tr>
@@ -66,9 +66,9 @@
                 <tr>
                     <td>Product Model number</td>
                     <td>
-                        <Select id="Product-model" onchange="PMselect()">
+                        <select id="Product-model" onchange="PMselect()">
                             <option value="None">Select Model</option>
-                        </Select>
+                        </select>
                         <span><input type="text" name="Product model" id="PM-out"></span>
 
                     </td>
@@ -86,27 +86,34 @@
     
                 <tr>
                     <td>ASP Name/FL</td>
-                    <td><input type="text" placeholder="Enter ASP Name" required id="fl" name="ASP Name"></td>
+                    <td><input type="text" placeholder="Enter ASP Name" required="" id="fl" name="ASP Name"></td>
                 </tr>
     
          
             </tbody>
             
-                <tr id="Readnote" style="display: none;">
+                <tbody><tr id="Readnote" style="display: none;">
                     <td>
                         <h1>Thankyou for connect with Elira</h1>
                     </td>
                 </tr>
                 <tr id="Rid-block" style="display:none;">
                     <td>Your Complaint ID</td>
-                    <td><label id="out1">Requesting Complaint ID</label>   <input id="out2" type="text" name="Complaint Id"></td>
+                    <td><label id="out1">0203ETPL134247</label>   <input id="out2" type="text" name="Complaint Id"></td>
                 </tr>
                 <tr id="btn-block">
                     <td style="background:none"></td><td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
                 </tr>                
          
-        </table>
+        </tbody></table>
     </form>
+    
+    </div>
+    
+    
     <script src="./JS/Script.js"></script>
+
+
 </body>
+
 </html>
