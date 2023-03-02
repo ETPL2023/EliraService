@@ -5,7 +5,11 @@ function numberonly(input){
 }
 /*---------------------------------------Input number Case ------------------------------------------*/
 /*---------------------------------------Product array ------------------------------------------*/
-
+function CTselect(){
+	var CT = document.getElementById("Call-Type");
+    	var displayCT = CT.options[CT.selectedIndex].text;
+    	document.getElementById('CT-out').value = displayCT;
+}
 function PMselect(){
     var PM = document.getElementById("Product-model");
     var displayPM = PM.options[PM.selectedIndex].text;
