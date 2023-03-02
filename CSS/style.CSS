@@ -67,7 +67,7 @@ form{
 }
 
 #title-logo{
-    height: 100px;
+    height: 70px;
     position: relative;
     left: 50%;
     transform: translate(-50%,0%);
@@ -94,6 +94,7 @@ table tr{
 td:nth-child(odd){
     background-color: lightgray;
     border-radius: 5px;
+    width: 30%;
 }
 table tr td{
     padding: 5px 5px;
@@ -166,6 +167,9 @@ table tr td #RegisterId:hover{
         height: 30px;
         width: 80%;
         margin: 10px 0;
+    }
+    td:nth-child(odd) {
+    width: auto;
     }
     table tr td #RegisterId {
     color:black;
