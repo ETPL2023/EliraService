@@ -87,7 +87,7 @@ function Complain(){
        	const scriptURL = 'https://script.google.com/macros/s/AKfycbxJQjCjvIdtmfyZsr1lNEqk60EkaQkLr0y17n2GY3zUz9I7O17Rn0li8bBrCu6lJyKR/exec'
         const form = document.forms['ETPL Form']
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Your complaint is received. Please Save your complaint number for the future." ))
+        .then(response => alert("Your Request is sent.Please Save your Complain Id for the future." ))
         .catch(error => console.error('Error!', error.message))
         document.getElementById("Rid-block").style.display="block";
         document.getElementById("Readnote").style.display="block";
