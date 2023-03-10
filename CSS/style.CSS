@@ -6,6 +6,10 @@
     display:none;
 }
 
+#date{
+     width: auto;
+    height: auto;   
+}
 #Wall{
     background: white; 
     position: absolute;  
