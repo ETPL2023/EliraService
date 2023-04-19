@@ -165,10 +165,9 @@ table tr td #RegisterId:hover{
 @media screen and (max-width:767px)
 {
 
-    
-.dots-5 {
-    bottom: 25%;
-  }
+ #GLogo{
+    top:5%;   
+}
     form{
         position: relative;
         margin: 5px 0.5%;
@@ -206,14 +205,14 @@ table tr td #RegisterId:hover{
 
 @media screen and (min-width:767px) and (max-width:1023px)
 {  
-.dots-5 {
-    bottom: 25%;
-  }
+ #GLogo{
+    top:5%;   
+}
 
 }
 @media screen and (min-width:1024px)
 {  
-.dots-5 {
-    bottom: 20%;
-  }
+ #GLogo{
+    top:5%;   
+}
 }
