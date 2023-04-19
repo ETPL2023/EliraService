@@ -35,7 +35,7 @@
 }
 #GLogo{
     position: absolute;
-    top:27.5%;
+    top:15%;
     left:30%;
     transform: translate(-50%,-50%);
     transform-origin: 50% 50%;
