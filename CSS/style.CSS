@@ -25,7 +25,7 @@
     overflow-y: scroll;
     z-index: 1;
 }
-#preload{background: white;position: absolute;width: 100%;height: 100%;z-index: -5;animation-name: preload;animation-duration: 5s;}
+#preload{background: white;position: absolute;width: 100%;height: 100%;z-index: 5;animation-name: preload;animation-duration: 5s;}
 #Logo{
     position: relative;
     top:50%;
@@ -35,15 +35,13 @@
 }
 #GLogo{
     position: absolute;
-    top:15%;
-    left:30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    transform-origin: 50% 50%;
+    /* transform-origin: 50% 50%; */
     transition: smooth;
     width: 40%;
-    animation: rotate 2.6s infinite linear;
-
-
+    /* animation: rotate 2.6s infinite linear; */
 }
 
 @keyframes preload {
@@ -60,20 +58,20 @@
 
 
   
-  @keyframes rotate {
-      0%  {transform: rotate(0deg)}
-      8.34%  {transform: rotate(30deg)}
-      16.67%  {transform: rotate(60deg)}
-      25%  {transform: rotate(90deg)}
-      33.33%  {transform: rotate(120deg)}
-      41.67%  {transform: rotate(150deg)}
-      50%  {transform: rotate(180deg)}
-      58.34%  {transform: rotate(210deg)}
-      66.66%  {transform: rotate(240deg)}
-      75% {transform: rotate(270deg)}
-      83.34% {transform: rotate(300deg)}
-      91.67%{transform: rotate(330deg)}
-      100%  {transform: rotate(360deg)}
+  @keyframes rotate{
+      0%  {transform: rotate(0deg) translate(-50%,-50%);}
+      8.34%  {transform: rotate(30deg) translate(-50%,-50%)}
+      16.67%  {transform: rotate(60deg) translate(-50%,-50%)}
+      25%  {transform: rotate(90deg) translate(-50%,-50%)}
+      33.33%  {transform: rotate(120deg) translate(-50%,-50%)}
+      41.67%  {transform: rotate(150deg) translate(-50%,-50%)}
+      50%  {transform: rotate(180deg) translate(-50%,-50%)}
+      58.34%  {transform: rotate(210deg) translate(-50%,-50%)}
+      66.66%  {transform: rotate(240deg) translate(-50%,-50%)}
+      75% {transform: rotate(270deg) translate(-50%,-50%)}
+      83.34% {transform: rotate(300deg) translate(-50%,-50%)}
+      91.67%{transform: rotate(330deg) translate(-50%,-50%)}
+      100%  {transform: rotate(360deg) translate(-50%,-50%)}
  }
 form{
     background: white;
@@ -166,7 +164,7 @@ table tr td #RegisterId:hover{
 {
 
  #GLogo{
-    top:5%;   
+    /* top:5%; */
 }
     form{
         position: relative;
@@ -206,13 +204,13 @@ table tr td #RegisterId:hover{
 @media screen and (min-width:767px) and (max-width:1023px)
 {  
  #GLogo{
-    top:5%;   
+    /* top:5%; */
 }
 
 }
 @media screen and (min-width:1024px)
 {  
  #GLogo{
-    top:5%;   
+    /* top:5%; */
 }
 }
