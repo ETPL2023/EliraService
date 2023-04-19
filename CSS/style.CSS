@@ -107,8 +107,9 @@ form{
     background: #989b9c;
     position: relative;
     text-align: center;
-    border-radius: 10px 10px 0px 0px; 
+    border-radius: 10px 10px 0px 0px;
     padding: 5px;
+    font-size: small;
 }
 table{
     height: auto;
