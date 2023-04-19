@@ -31,7 +31,19 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    width: 20%;
+}
+#GLogo{
+    position: absolute;
+    top:27.5%;
+    left:30%;
+    transform: translate(-50%,-50%);
+    transform-origin: 50% 50%;
+    transition: smooth;
     width: 40%;
+    animation: rotate 2.6s infinite linear;
+
+
 }
 
 @keyframes preload {
@@ -47,23 +59,22 @@
 }
 
 
-.dots-5 {
-    width: 15px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    animation: d5 1s infinite linear alternate;
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%,-50%);
-  }
-  @keyframes d5 {
-      0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
-      33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
-      66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
-      100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
-  }
-
+  
+  @keyframes rotate {
+      0%  {transform: rotate(0deg)}
+      8.34%  {transform: rotate(30deg)}
+      16.67%  {transform: rotate(60deg)}
+      25%  {transform: rotate(90deg)}
+      33.33%  {transform: rotate(120deg)}
+      41.67%  {transform: rotate(150deg)}
+      50%  {transform: rotate(180deg)}
+      58.34%  {transform: rotate(210deg)}
+      66.66%  {transform: rotate(240deg)}
+      75% {transform: rotate(270deg)}
+      83.34% {transform: rotate(300deg)}
+      91.67%{transform: rotate(330deg)}
+      100%  {transform: rotate(360deg)}
+ }
 form{
     background: white;
     position: relative;
