@@ -4,6 +4,9 @@
 }
 #P-out,#PM-out,#CT-out,#out2,#Goback{
     display:none;
+    position: relative;
+    width: 45%;
+    height: 24px;
 }
 
 #Date{
@@ -216,7 +219,7 @@ table tr td #RegisterId:hover{
     }
     table tr td select {
         height: 30px;
-        width: 80%;
+        width: 50%;
         margin: 10px 0;
     }
     td:nth-child(odd) {
