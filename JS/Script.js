@@ -85,7 +85,7 @@ function Complain(){
     if(Name.value !="" && addr.value !="" && phone.value !="" && fl.value!="")
         {
        	const scriptURL = 'https://script.google.com/macros/s/AKfycbzJgYcZRBbvB46kmgo-JYv_Qx42VibV2ZO2yNZFH1H4Ydl9UzTCagmloZKCfIE0kwkWzA/exec'
-        const form = document.forms['ETPL Form']
+        const form = document.forms['ETPLForm']
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => alert("Your Request is sent.Please Save your Complain Id for the future." ))
         .catch(error => console.error('Error!', error.message))
