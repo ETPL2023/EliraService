@@ -20,38 +20,38 @@
         </div>
     <div id="Wall"></div>
     <div id="Content">
-        <form method="POST" id="form" name="ETPLForm">
+        <form method="POST" id="form" name="ETPLForm" action="https://script.google.com/macros/s/AKfycbwsi2_YetiaEgOOkFN0oPqp48eNLlc_2cTCm2J0lHoTa0sZF3RwNLNDNmjhm4Ox1zyK/exec">
             <img id="title-logo" src="./Image/Elira.png" alt="Elira Logo">
             <div class="note">
                 <h1>Service Request</h1>
-                <p>Please fill out the following form with your</p>
-                <p>complaint. We will review your request and follow</p>
-                <p>up with you as soon as possible</p>
+                <p>Please fill out the following form with your
+                complaint. We will review your request and follow
+                up with you as soon as possible</p>
             </div>
             <table>
                 <tbody id="tbody">
                     <tr>
-                        <td>Customer Name</td>
-                        <td><input type="text" placeholder="Enter Your Name" required="" id="name" name="Name"></td>
+                        <td>Customer Name <span style="font-size: 18px;color: red;">*</span></td>
+                        <td><input type="text" placeholder="Enter Your Name" required id="name" name="Name"></td>
                     </tr>
                     <tr>
-                        <td>Customer Address</td>
-                        <td><input type="text" placeholder="Enter Your Address" required="" id="addr" name="Address"></td>
+                        <td>Customer Address <span style="font-size: 18px;color: red;">*</span> </td>
+                        <td><input type="text" placeholder="Enter Your Address" required id="addr" name="Address"></td>
                     </tr>
                     <tr>
                         <td>Pincode</td>
-                        <td><input type="text" placeholder="Enter Pincode" required="" id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
+                        <td><input type="text" placeholder="Enter Pincode" id="Pin" maxlength="6" onkeyup="numberonly(this)" name="Pincode"></td>
                     </tr>
                     <tr>
-                        <td>Customer Phone</td>
-                        <td><input type="text" placeholder="Enter Your Phone Number" required="" id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
+                        <td>Customer Phone <span style="font-size: 18px;color: red;">*</span></td>
+                        <td><input type="text" placeholder="Enter Your Phone Number" required id="phone" maxlength="10" onkeyup="numberonly(this)" name="Phone"></td>
                     </tr>
                     <tr>
-                        <td>Alternate Phone (Optional)</td>
-                        <td><input type="text" placeholder="Enter Alternate Phone Number" required="" id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
+                        <td>Alternate Phone</td>
+                        <td><input type="text" placeholder="Enter Alternate Phone Number" id="altphone" maxlength="10" onkeyup="numberonly(this)" name="Alternate Phone"></td>
                     </tr>
                     <tr>
-                        <td>Product</td>
+                        <td>Product <span style="font-size: 18px;color: red;">*</span></td>
                         <td>
                             <select id="product" name="Product" onchange="populate(this.id,'Product-model')">
                                 <option value="None">Select Product</option>
@@ -59,7 +59,7 @@
                                 <option value="Washing Machine">Washing Machine</option>
                                 <option value="Cooler">Air Cooler</option>
                             </select>
-                        <span><input type="text" name="Product" id="P-out"></span>
+                        <span><input type="text" name="Product" id="P-out" required></span>
                         </td>
                     </tr>
                     <tr>
@@ -76,26 +76,26 @@
                         </td>
                     </tr> 
                     <tr>
-                        <td>Call Type</td>
+                        <td>Call Type <span style="font-size: 18px;color: red;">*</span></td>
                         <td>
                             <select id="Call-Type" onchange="CTselect()">
                                 <option value="None">Select Call Type</option>
                                 <option value="Demo Installation">Demo Installation</option>
                                 <option value="Service Call">Service Call</option>
                             </select>
-                        <span><input type="text" name="Call Type" id="CT-out"></span>
+                        <span><input type="text" name="Call Type" required id="CT-out"></span>
                         </td>
                     </tr>
                     <tr>
                         <td>Problem</td>
-                        <td><input type="text" placeholder="Enter Problem" required="" id="fl" name="Problem"></td>
+                        <td><input type="text" placeholder="Enter Problem" id="fl" name="Problem"></td>
                     </tr>
                     <tr>
                         <td>Dealer Name</td>
                         <td><input type="text" placeholder="Enter Dealer Name" name="Dealer Name"></td>
                     </tr>
                     <tr>
-                        <td>Technician Name (Optional)</td>
+                        <td>Technician Name</td>
                         <td><input type="text" placeholder="Enter Technician Name" name="Technician Name"></td>
                     </tr>
                 </tbody> 
@@ -111,7 +111,7 @@
                     </tr>
                     <tr id="btn-block">
                         <td style="background:none"></td>
-                        <td><input type="button" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
+                        <td><input type="submit" id="RegisterId" onclick="Complain()" value="Confirm Complain"></td>
                     </tr>                
                 </tfoot>
             </table>
