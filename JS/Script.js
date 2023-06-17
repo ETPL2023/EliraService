@@ -48,32 +48,7 @@ function populate(s1,s2){
 	}
 }
 /*---------------------------------------Product array ------------------------------------------*/
-/*---------------------------------------Complaint id ------------------------------------------*/
-	var d = new Date();
-	var gdate = d.getDate();
-	var gmon = d.getMonth(); 
-	var gh = d.getHours();
-	var gm = d.getMinutes();
-	var gs = d.getSeconds();
-	var fd,fmon,fh,fm,fs;
-	if(gdate.toString().length == 1){
-	    gdate = "0"+gdate;
-	}
-	if(gmon.toString().length == 1){
-	    gmon = "0"+(gmon+1);
-	}
-	if(gh.toString().length == 1){
-	    gh = "0"+gh; 
-	}
-	if(gm.toString().length == 1){
-	    gm = "0"+gm;
-	}
-	if(gs.toString().length == 1){
-	    gs = "0"+gs;  
-	}
-	document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
-	document.getElementById('out2').value=gdate+""+gmon+""+"ETPL"+gh+""+gm+""+gs; 
-/*---------------------------------------Complaint id ------------------------------------------*/
+
 /*---------------------------------------Null Case Code------------------------------------------*/
 function Complain(){    
         var Name = document.getElementById('name');
@@ -100,7 +75,29 @@ function Complain(){
         document.getElementById("preload").style="display:none";
         document.getElementById("tbody").style="display:none";
 
+/*---------------------------------------Complaint id ------------------------------------------*/
+var d = new Date();
+var gdate = d.getDate();
+var gmon = d.getMonth(); 
 
+document.getElementById('out1').innerHTML = localStorage.getItem('Callid');
+var value = document.getElementById('out1');
+var callid = value.innerHTML;
+++callid;
+
+if(gdate.toString().length == 1){
+	gdate = "0"+gdate;
+}
+if(gmon.toString().length == 1){
+	gmon = "0"+(gmon+1);
+}
+document.getElementById('out1').innerHTML=callid;
+
+document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+callid; 
+document.getElementById('out2').value=gdate+""+gmon+""+"ETPL"+callid; 
+localStorage.setItem('Callid',callid);
+
+/*---------------------------------------Complaint id ------------------------------------------*/
 
 
         }else
