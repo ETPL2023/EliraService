@@ -92,19 +92,6 @@ if(gmon.toString().length == 1){
 	gmon = "0"+gmon;
 }
 
-
-if(Call_id.toString().length == 1){
-	Call_id = "000"+(Call_id+0);
-}
-else if(Call_id.toString().length == 2){
-	Call_id = "00"+(Call_id+0);
-}
- else if(Call_id.toString().length == 3){
- 	Call_id = "0"+(Call_id+0);
-}
- else if(Call_id.toString().length == 4){
- 	Call_id = (Call_id+0);
-}		
 document.getElementById('out1').innerHTML=callid;
 
 document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+callid; 
