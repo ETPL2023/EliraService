@@ -78,7 +78,7 @@ function Complain(){
 /*---------------------------------------Complaint id ------------------------------------------*/
 var d = new Date();
 var gdate = d.getDate();
-var gmon = d.getMonth(); 
+var gmon = d.getMonth()+1; 
 
 document.getElementById('out1').innerHTML = localStorage.getItem('Callid');
 var value = document.getElementById('out1');
@@ -89,7 +89,7 @@ if(gdate.toString().length == 1){
 	gdate = "0"+gdate;
 }
 if(gmon.toString().length == 1){
-	gmon = "0"+(gmon+1);
+	gmon = "0"+gmon;
 }
 
 
