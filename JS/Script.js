@@ -89,9 +89,21 @@ if(gdate.toString().length == 1){
 	gdate = "0"+gdate;
 }
 if(gmon.toString().length == 1){
-	gmon = "0"+gmon;
+	gmon = "0"+(gmon);
+}
+else if(gmon.toString().length == 2){
+	gmon = ""+(gmon);
 }
 
+if(callid.toString().length == 3){
+	callid = "0"+(callid)
+}
+else if(callid.toString().length == 2){
+	callid = "00"+(callid)
+}
+else if(callid.toString().length == 1){
+	callid = "000"+(callid)
+}
 document.getElementById('out1').innerHTML=callid;
 
 document.getElementById('out1').innerHTML=gdate+""+gmon+""+"ETPL"+callid; 
