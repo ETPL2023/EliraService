@@ -3,7 +3,7 @@
     --imgheight: 160px;
  } 
 .box{
-    background: url("../Image/3274764.jpg") !important;
+    background: white !important;
     background-position: center !important;
     background-size: cover !important;
     position: absolute !important;
