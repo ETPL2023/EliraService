@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background: url("../Image/3274764.jpg") !important;
+    background-position: top !important;
+    background-size:cover !important;
+}
+
+#alertclose{
+    cursor: pointer;
+}
+#Reload_box{
+    display: none;
+}
+
+.dash-btn{
+    display: flex;
+}
+.ELIRA{
+    display: none;
+}
+.section{
+    margin-top: 65px !important;
+}
+
+
+#RegisterId{
+    display: block;
+}
+#confirm{
+    display: none;
+}
+
+#Callid_field{
+    display: none;
+} 
+
+#Complain_box_output{
+    background: #159731ba;
+    color: white;
+}
+
+@media (min-width :992px) {
+    .dash-btn{
+        display: none;
+    }
+    .ELIRA{
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+ :root{
+    --imgwidth: 160px;
+    --imgheight: 160px;
+ } 
+.box{
+    background: url("../Image/3274764.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    position: absolute !important;
+    display: flex;
+    top: 0%;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 1;
+}
+#Logo{
+    width: var(--imgwidth);
+}
+#Gear{
+    width: var(--imgwidth);
+    transition: smooth;
+    animation: rotate 2.6s linear infinite;
+}
+
+@keyframes rotate{
+      0%  {transform: rotate(0deg)}
+      25%  {transform: rotate(90deg)}
+      50%  {transform: rotate(180deg)}
+      75% {transform: rotate(270deg)}
+      100%  {transform: rotate(360deg)}
+ }
