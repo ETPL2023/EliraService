@@ -25,13 +25,13 @@ function Product_Name(s1,s2){
 	"Elira WM 6.8KG Half Glass (ESAWM680HGBR)|Elira WM 6.8KG Half Glass (ESAWM680HGBR)",
 	"Elira WM 7KG Full Glass (ESAWM700FGFL)|Elira WM 7KG Full Glass (ESAWM700FGFL)",
 	"Elira WM 7.0KG(ESAWM700FGWR)|Elira WM 7.0 KG(ESAWM700FGWR)",
-	"new Elira WM 8.0Kg (ESAWM800FTWB)|new Elira WM 8.0Kg (ESAWM800FTWB)",
+	"new - Elira WM 8.0Kg (ESAWM800FTWB)|new - Elira WM 8.0Kg (ESAWM800FTWB)",
 	"Elira WM 8.0KG FG Soft Closer (ESAWM800FGBG)|Elira WM 8KG FG Soft Closer (ESAWM800FGBG)",
 	"Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)|Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)",
-	"new Elira WM 8.5Kg (ESAWM850FTWB)|new Elira WM 8.5Kg (ESAWM850FTWB)",
+	"new - Elira WM 8.5Kg (ESAWM850FTWB)|new - Elira WM 8.5Kg (ESAWM850FTWB)",
 	"Elira WM 8.0KG(ESAWM800FGWP)|Elira WM 8.0KG(ESAWM800FGWP)",
 	"Elira WM 9.0KG(ESAWM900FGWB)|Elira WM 9.0KG(ESAWM900FGWB)",
-	"new Elira WM 10.0 Kg (ESAWM100FTWB)|new Elira WM 10.0 Kg (ESAWM100FTWB)",
+	"new - Elira WM 10.0 Kg (ESAWM100FTWB)|new - Elira WM 10.0 Kg (ESAWM100FTWB)",
 	"Elira WM 10KG FG BLACK (ESAWM100FGWB)|Elira WM 10KG FG BLACK (ESAWM100FGWB)",
 	];
 	product = displayProduct.value;    
@@ -58,7 +58,7 @@ function Product_Name(s1,s2){
 		"Cool Home 95Ltr (ECL16DL09FGL)|Cool Home 95Ltr (ECL16DL09FGL)",
 		"Drass Dlx 45Ltr (ECL12BG05ASL)|Drass Dlx 45Ltr (ECL12BG05ASL)",
 		"Drass 30Ltr (ECL12DG03ASL)|Drass 30Ltr (ECL12DG03ASL)",
-				   
+		"----|----"		   
 		"Desert Igor 55Ltr (ECL162855LTC)|Desert Igor 55Ltr (ECL162855LTC)",
 		"Desert Candy 55Ltr (ECL162855LTS)|Desert Candy 55Ltr (ECL162855LTS)",
 		"Desert Igor Dlx 75Ltr (ECL162875LTC)|Desert Igor Dlx 75Ltr (ECL162875LTC)",
