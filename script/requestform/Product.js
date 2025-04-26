@@ -48,6 +48,17 @@ function Product_Name(s1,s2){
        
 	} else if(s1.value == "Cooler"){
 		var optionArray = ["Select Model|Select Model",
+		"Winter-Zone Dlx 175Ltr  (ECL24BW18FGL)|Winter-Zone Dlx 175Ltr  (ECL24BW18FGL)",
+		"Winter-Zone 150Ltr (ECL20BP15MGL)|Winter-Zone 150Ltr (ECL20BP15MGL)",
+		"Sumera-Dlx 150Ltr (ECL20BG15ASL)|Sumera-Dlx 150Ltr (ECL20BG15ASL)",
+		"Event Dlx 120Ltr (ECL18EG12ASL)|Event Dlx 120Ltr (ECL18EG12ASL)",
+		"Event 120Ltr (ECL18EG12FGL)|Event 120 Ltr (ECL18EG12FGL)",
+		"Ice-Cool Dlx 120Ltr (ECL18DR12ASL)|Ice-Cool Dlx 120Ltr (ECL18DR12ASL)",
+		"Ice-Cool  120Ltr (ECL18DR12FGL)|Ice-Cool  120Ltr (ECL18DR12FGL)",
+		"Cool Home 95Ltr (ECL16DL09FGL)|Cool Home 95Ltr (ECL16DL09FGL)",
+		"Drass Dlx 45Ltr (ECL12BG05ASL)|Drass Dlx 45Ltr (ECL12BG05ASL)",
+		"Drass 30Ltr (ECL12DG03ASL)|Drass 30Ltr (ECL12DG03ASL)",
+				   
 		"Desert Igor 55Ltr (ECL162855LTC)|Desert Igor 55Ltr (ECL162855LTC)",
 		"Desert Candy 55Ltr (ECL162855LTS)|Desert Candy 55Ltr (ECL162855LTS)",
 		"Desert Igor Dlx 75Ltr (ECL162875LTC)|Desert Igor Dlx 75Ltr (ECL162875LTC)",
