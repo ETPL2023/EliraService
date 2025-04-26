@@ -58,7 +58,7 @@ function Product_Name(s1,s2){
 		"Cool Home 95Ltr (ECL16DL09FGL)|Cool Home 95Ltr (ECL16DL09FGL)",
 		"Drass Dlx 45Ltr (ECL12BG05ASL)|Drass Dlx 45Ltr (ECL12BG05ASL)",
 		"Drass 30Ltr (ECL12DG03ASL)|Drass 30Ltr (ECL12DG03ASL)",
-		"----|----"		   
+				   
 		"Desert Igor 55Ltr (ECL162855LTC)|Desert Igor 55Ltr (ECL162855LTC)",
 		"Desert Candy 55Ltr (ECL162855LTS)|Desert Candy 55Ltr (ECL162855LTS)",
 		"Desert Igor Dlx 75Ltr (ECL162875LTC)|Desert Igor Dlx 75Ltr (ECL162875LTC)",
