@@ -69,9 +69,14 @@ function Product_Name(s1,s2){
 		"Desert Super Sumo 100Ltr (ECL202810LTL)|Desert Super Sumo 100Ltr (ECL202810LTL)",
 		"Desert Super Sumo Dlx 100Ltr (ECL202810LTC)|Desert Super Sumo Dlx 100Ltr (ECL202810LTC)"];
 		product = displayProduct.value;
-       
 	}
-    else if(s1.value == "None"){
+	else if(s1.value == "Tower Speaker"){
+		var optionArray = ["Select Model|Select Model",
+		"Twin Tower Speakers  (ETT7401WB32K)|Twin Tower Speakers  (ETT7401WB32K)",
+		"Tower Speakers (EST7405WB32N)|Tower Speakers (EST7405WB32N)",];
+		product = displayProduct.value;
+	}
+    	else if(s1.value == "None"){
 		var optionArray = ["Select Model|Select Model"];
 	}
 	for(var option in optionArray){
