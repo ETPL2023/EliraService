@@ -20,46 +20,78 @@ function Product_Name(s1,s2){
 	s2.innerHTML = "";
 	if(s1.value == "Washing Machine"){
 	var optionArray = ["Select Model|Select Model",
-	"Elira WM 6.5KG(ESAWM650OPWP)|Elira WM 6.5KG(ESAWM650OPWP)",	
-	"Elira WM 7.0KG(ESAWM700FGWR)|Elira WM 7.0 KG(ESAWM700FGWR)",	
-	"Elira WM 8.0KG(ESAWM800FGWP)|Elira WM 8.0KG(ESAWM800FGWP)",
-	"Elira WM 9.0KG(ESAWM900FGWB)|Elira WM 9.0KG(ESAWM900FGWB)",
-	"Elira WM 10KG FG BLACK (ESAWM100FGWB)|Elira WM 10KG FG BLACK (ESAWM100FGWB)",
+"ESAWM650OPWP - 6.50 Kg TP Semi|ESAWM650OPWP - 6.50 Kg TP Semi",
+"ESAWM700FGWR - 7 Kg Full T Glass |ESAWM700FGWR - 7 Kg Full T Glass ",
+"ESAWM800FGWP - 8 Kg Full T Glass |ESAWM800FGWP - 8 Kg Full T Glass ",
+"ESAWM900FGWB - 9 Kg Full T Glass|ESAWM900FGWB - 9 Kg Full T Glass",
+"ESAWM100FGWB - 10 Kg Full T Glass|ESAWM100FGWB - 10 Kg Full T Glass",
+
+"ESAWM650SRWR - 6.50 Kg TP Semi|ESAWM650SRWR - 6.50 Kg TP Semi",
+"ESAWM680HGBR - 6.80 Kg Half Glass|ESAWM680HGBR - 6.80 Kg Half Glass",
+"ESAWM700FGFL - 7 Kg Full Glass Semi|ESAWM700FGFL - 7 Kg Full Glass Semi ",
+"ESAWM800FGBG - 8 Kg Full Glass Semi|ESAWM800FGBG - 8 Kg Full Glass Semi ",
+"ESAWM800HTWB - 8 Kg Half Glass Semi|ESAWM800HTWB - 8 Kg Half Glass Semi",
+"ESAWM800FTWB - 8 Kg Full Glass Semi|ESAWM800FTWB - 8 Kg Full Glass Semi",
+"ESAWM850FGBG  - 8.5 Kg Full Glass Semi|ESAWM850FGBG  - 8.5 Kg Full Glass Semi",
+"ESAWM850FTWB - 8.5 Kg Full Glass Semi|ESAWM850FTWB - 8.5 Kg Full Glass Semi",
+"ESAWM100FGBG - 10 Kg Full Glass Semi|ESAWM100FGBG - 10 Kg Full Glass Semi",
+"ESAWM100FTWB - 10 Kg Full Glass Semi|ESAWM100FTWB - 10 Kg Full Glass Semi",
+	
+
 	];
 	product = displayProduct.value;    
     } 
 	else if(s1.value == "LED-TV"){
 		var optionArray = ["Select Model|Select Model",
-		"Elira SMART LED HD TV 32inch (32EL3304AYU4)|Elira SMART LED HD TV 32inch (32EL3304AYU4)",
-		"Elira SMART LED HD TV 32inch (32EL3404AYU4)|Elira SMART LED HD TV 32inch (32EL3404AYU4)",
-		"Elira SMART LED Full HD TV 43inch (43EL4304AYU4)|Elira SMART LED Full HD TV 43inch (43EL4304AYU4)",
-		"Elira SMART LED Full HD TV 43inch (43EL4404AYU4)|Elira SMART LED Full HD TV 43inch (43EL4404AYU4)",
-		"Elira SMART LED UHD TV 50inch (50EL5102AZV4)|Elira SMART LED UHD TV 50inch (50EL5102AZV4)",
-		"Elira SMART LED UHD TV 55inch (55EL5502AZV4)|Elira SMART LED UHD TV 55inch (55EL5502AZV4)"];
+"32EL3303AYU2 - Cloud 512/8GB|32EL3303AYU2 - Cloud 512/8GB",
+"32EL3304AYU4 - Cloud 1GB|32EL3304AYU4 - Cloud 1GB",
+"32EL3404AYU4 - Android 1GB V/C|32EL3404AYU4 - Android 1GB V/C",
+"32EL3405AYU4 - HD Google 1.5GB Magic Rc|32EL3405AYU4 - HD Google 1.5GB Magic Rc",
+"32EL3406AYU6 - HD WebOS 1.5GB Magic RC|32EL3406AYU6 - HD WebOS 1.5GB Magic RC",
+"40EL4204AYU4 - Android 1GB V/C|40EL4204AYU4 - Android 1GB V/C",
+"43EL4304AYU4 - Cloud 1GB|43EL4304AYU4 - Cloud 1GB",
+"43EL4404AYU4 - Android 1GB V/C|43EL4404AYU4 - Android 1GB V/C",
+"43EL4405AYU6 - HD Google 1.5GB Magic Rc|43EL4405AYU6 - HD Google 1.5GB Magic Rc",
+"43EL4506AYU6 - HD WebOS 1.5GB Magic RC|43EL4506AYU6 - HD WebOS 1.5GB Magic RC",
+"43EL4304AZV4 - Android 1.5GB V/C|43EL4304AZV4 - Android 1.5GB V/C",
+"43EL4505AZV6 - HD Google 1.5GB Magic Rc|43EL4505AZV6 - HD Google 1.5GB Magic Rc",
+"43EL4506AZV6 - HD WebOS 1.5GB Magic RC|43EL4506AZV6 - HD WebOS 1.5GB Magic RC",
+"50EL5104AZV4 - Android 1.5GB V/C|50EL5104AZV4 - Android 1.5GB V/C",
+"50EL5105AZV6 - HD Google 1.5GB Magic Rc|50EL5105AZV6 - HD Google 1.5GB Magic Rc",
+"50EL5106AZV6 - HD WebOS 1.5GB Magic RC|50EL5106AZV6 - HD WebOS 1.5GB Magic RC",
+"55EL5505AZV6 - HD Google 1.5GB Magic Rc|55EL5505AZV6 - HD Google 1.5GB Magic Rc",
+"55EL5506AZV6 - HD WebOS 1.5GB Magic RC|55EL5506AZV6 - HD WebOS 1.5GB Magic RC",
+"65EL6505AZV6 - HD Google 1.5GB Magic Rc|65EL6505AZV6 - HD Google 1.5GB Magic Rc",
+"65EL6506AZV6 - HD WebOS 1.5GB Magic RC|65EL6506AZV6 - HD WebOS 1.5GB Magic RC",
+"75EL7506AZV6 - HD WebOS 1.5GB Magic RC|75EL7506AZV6 - HD WebOS 1.5GB Magic RC",
+"85EL8506AZV6 - HD WebOS 1.5GB Magic RC|85EL8506AZV6 - HD WebOS 1.5GB Magic RC",
+
+];
 		product = displayProduct.value;
        
 	} else if(s1.value == "Cooler"){
 		var optionArray = ["Select Model|Select Model",
-		"Winter-Zone Dlx 175Ltr  (ECL24BW18FGL)|Winter-Zone Dlx 175Ltr  (ECL24BW18FGL)",
-		"Winter-Zone 150Ltr (ECL20BP15MGL)|Winter-Zone 150Ltr (ECL20BP15MGL)",
-		"Sumera-Dlx 150Ltr (ECL20BG15ASL)|Sumera-Dlx 150Ltr (ECL20BG15ASL)",
-		"Event Dlx 120Ltr (ECL18EG12ASL)|Event Dlx 120Ltr (ECL18EG12ASL)",
-		"Event 120Ltr (ECL18EG12FGL)|Event 120 Ltr (ECL18EG12FGL)",
-		"Ice-Cool Dlx 120Ltr (ECL18DR12ASL)|Ice-Cool Dlx 120Ltr (ECL18DR12ASL)",
-		"Ice-Cool  120Ltr (ECL18DR12FGL)|Ice-Cool  120Ltr (ECL18DR12FGL)",
-		"Cool Home 95Ltr (ECL16DL09FGL)|Cool Home 95Ltr (ECL16DL09FGL)",
-		"Drass Dlx 45Ltr (ECL12BG05ASL)|Drass Dlx 45Ltr (ECL12BG05ASL)",
-		"Drass 30Ltr (ECL12DG03ASL)|Drass 30Ltr (ECL12DG03ASL)",
-		"-----|-----",		   
-		"Desert Igor 55Ltr (ECL162855LTC)|Desert Igor 55Ltr (ECL162855LTC)",
-		"Desert Candy 55Ltr (ECL162855LTS)|Desert Candy 55Ltr (ECL162855LTS)",
-		"Desert Igor Dlx 75Ltr (ECL162875LTC)|Desert Igor Dlx 75Ltr (ECL162875LTC)",
-		"Desert Candy Dlx 75Ltr (ECL162875LTS)|Desert Candy Dlx 75Ltr (ECL162875LTS)",
-		"Desert Swiss 85Ltr (ECL162885LTM)|Desert Swiss 85Ltr (ECL162885LTM)",
-		"Desert Event 70Ltr (ECL162870LTL)|Desert Event 70Ltr (ECL162870LTL)",
-		"Desert Sumo 85Ltr (ECL182880LTL)|Desert Sumo 85Ltr (ECL182880LTL)",
-		"Desert Super Sumo 100Ltr (ECL202810LTL)|Desert Super Sumo 100Ltr (ECL202810LTL)",
-		"Desert Super Sumo Dlx 100Ltr (ECL202810LTC)|Desert Super Sumo Dlx 100Ltr (ECL202810LTC)"];
+		"ECL24BW18FGL - Winter-Zone Dlx 175 Ltr|ECL24BW18FGL - Winter-Zone Dlx 175 Ltr",
+		"ECL20BP15MGL - Winter-Zone 150 Ltr|ECL20BP15MGL - Winter-Zone 150 Ltr",
+		"ECL20BG15ASL - Sumera-Dlx 150 Ltr|ECL20BG15ASL - Sumera-Dlx 150 Ltr",
+		"ECL18EG12ASL - Event Dlx 120 Ltr|ECL18EG12ASL - Event Dlx 120 Ltr",
+		"ECL18EG12FGL - Event 120 Ltr|ECL18EG12FGL - Event 120 Ltr",
+		"ECL18DR12MGL - Ice-Cool Dlx 120 Ltr|ECL18DR12MGL - Ice-Cool Dlx 120 Ltr",
+		"ECL18DR12FGL - Ice-Cool  120 Ltr|ECL18DR12FGL - Ice-Cool  120 Ltr",
+		"ECL16DL09FGL - Cool Home 95 Ltr|ECL16DL09FGL - Cool Home 95 Ltr",
+		"ECL12BG05ASL - Drass Dlx 45 Ltr|ECL12BG05ASL - Drass Dlx 45 Ltr",
+		"ECL12BG03ASL - Drass Dlx 25 Ltr|ECL12BG03ASL - Drass Dlx 25 Ltr",
+				"-----|-----",		   
+		"ECL202810LTC - Super Sumo Dlx 100Ltr|ECL202810LTC - Super Sumo Dlx 100Ltr",
+		"ECL202810LTL - Super Sumo Dlx 100Ltr|ECL202810LTL - Super Sumo Dlx 100Ltr",
+		"ECL182880LTL - Sumo 85Ltr|ECL182880LTL - Sumo 85Ltr",
+		"ECL162870LTL - Event 70Ltr|ECL162870LTL - Event 70Ltr",
+		"ECL162885LTM - Swiss 85Ltr|ECL162885LTM - Swiss 85Ltr",
+		"ECL162875LTC -  Igor Dlx 75Ltr|ECL162875LTC -  Igor Dlx 75Ltr",
+		"ECL162855LTC -  Igor Dlx 55Ltr|ECL162855LTC -  Igor Dlx 55Ltr",
+		"ECL162875LTS - Candy Dlx 75Ltr|ECL162875LTS - Candy Dlx 75Ltr",
+		"ECL162855LTS - Candy 55Ltr|ECL162855LTS - Candy 55Ltr",
+		];
 		product = displayProduct.value;
 	}
 	else if(s1.value == "Tower Speaker"){
@@ -90,4 +122,5 @@ function Product_Name(s1,s2){
 function testing(){
 	alert("Dashboard Under Maintance! 🙂")
 }
+
 
