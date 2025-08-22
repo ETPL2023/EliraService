@@ -20,18 +20,10 @@ function Product_Name(s1,s2){
 	s2.innerHTML = "";
 	if(s1.value == "Washing Machine"){
 	var optionArray = ["Select Model|Select Model",
-	"Elira WM 6.5KG Std (ESAWM650SRWR)|Elira WM 6.5KG Std (ESAWM650SRWR)",
-	"Elira WM 6.5KG(ESAWM650OPWP)|Elira WM 6.5KG(ESAWM650OPWP)",
-	"Elira WM 6.8KG Half Glass (ESAWM680HGBR)|Elira WM 6.8KG Half Glass (ESAWM680HGBR)",
-	"Elira WM 7KG Full Glass (ESAWM700FGFL)|Elira WM 7KG Full Glass (ESAWM700FGFL)",
-	"Elira WM 7.0KG(ESAWM700FGWR)|Elira WM 7.0 KG(ESAWM700FGWR)",
-	"new - Elira WM 8.0Kg (ESAWM800FTWB)|new - Elira WM 8.0Kg (ESAWM800FTWB)",
-	"Elira WM 8.0KG FG Soft Closer (ESAWM800FGBG)|Elira WM 8KG FG Soft Closer (ESAWM800FGBG)",
-	"Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)|Elira WM 8.5KG FG Soft Closer (ESAWM850FGBG)",
-	"new - Elira WM 8.5Kg (ESAWM850FTWB)|new - Elira WM 8.5Kg (ESAWM850FTWB)",
+	"Elira WM 6.5KG(ESAWM650OPWP)|Elira WM 6.5KG(ESAWM650OPWP)",	
+	"Elira WM 7.0KG(ESAWM700FGWR)|Elira WM 7.0 KG(ESAWM700FGWR)",	
 	"Elira WM 8.0KG(ESAWM800FGWP)|Elira WM 8.0KG(ESAWM800FGWP)",
 	"Elira WM 9.0KG(ESAWM900FGWB)|Elira WM 9.0KG(ESAWM900FGWB)",
-	"new - Elira WM 10.0 Kg (ESAWM100FTWB)|new - Elira WM 10.0 Kg (ESAWM100FTWB)",
 	"Elira WM 10KG FG BLACK (ESAWM100FGWB)|Elira WM 10KG FG BLACK (ESAWM100FGWB)",
 	];
 	product = displayProduct.value;    
@@ -98,3 +90,4 @@ function Product_Name(s1,s2){
 function testing(){
 	alert("Dashboard Under Maintance! 🙂")
 }
+
