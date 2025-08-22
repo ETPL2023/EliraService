@@ -20,53 +20,49 @@ function Product_Name(s1,s2){
 	s2.innerHTML = "";
 	if(s1.value == "Washing Machine"){
 	var optionArray = ["Select Model|Select Model",
-"ESAWM650OPWP - 6.50 Kg TP Semi|ESAWM650OPWP - 6.50 Kg TP Semi",
-"ESAWM700FGWR - 7 Kg Full T Glass |ESAWM700FGWR - 7 Kg Full T Glass ",
-"ESAWM800FGWP - 8 Kg Full T Glass |ESAWM800FGWP - 8 Kg Full T Glass ",
-"ESAWM900FGWB - 9 Kg Full T Glass|ESAWM900FGWB - 9 Kg Full T Glass",
-"ESAWM100FGWB - 10 Kg Full T Glass|ESAWM100FGWB - 10 Kg Full T Glass",
-
-"ESAWM650SRWR - 6.50 Kg TP Semi|ESAWM650SRWR - 6.50 Kg TP Semi",
-"ESAWM680HGBR - 6.80 Kg Half Glass|ESAWM680HGBR - 6.80 Kg Half Glass",
-"ESAWM700FGFL - 7 Kg Full Glass Semi|ESAWM700FGFL - 7 Kg Full Glass Semi ",
-"ESAWM800FGBG - 8 Kg Full Glass Semi|ESAWM800FGBG - 8 Kg Full Glass Semi ",
-"ESAWM800HTWB - 8 Kg Half Glass Semi|ESAWM800HTWB - 8 Kg Half Glass Semi",
-"ESAWM800FTWB - 8 Kg Full Glass Semi|ESAWM800FTWB - 8 Kg Full Glass Semi",
-"ESAWM850FGBG  - 8.5 Kg Full Glass Semi|ESAWM850FGBG  - 8.5 Kg Full Glass Semi",
-"ESAWM850FTWB - 8.5 Kg Full Glass Semi|ESAWM850FTWB - 8.5 Kg Full Glass Semi",
-"ESAWM100FGBG - 10 Kg Full Glass Semi|ESAWM100FGBG - 10 Kg Full Glass Semi",
-"ESAWM100FTWB - 10 Kg Full Glass Semi|ESAWM100FTWB - 10 Kg Full Glass Semi",
-	
-
+	"ESAWM650OPWP - 6.50 Kg TP Semi|ESAWM650OPWP - 6.50 Kg TP Semi",
+	"ESAWM650SRWR - 6.50 Kg TP Semi|ESAWM650SRWR - 6.50 Kg TP Semi",
+	"ESAWM680HGBR - 6.80 Kg Half TF Glass|ESAWM680HGBR - 6.80 Kg Half TF Glass",
+	"ESAWM700FGWR - 7 Kg Full TF Glass |ESAWM700FGWR - 7 Kg Full TF Glass ",
+	"ESAWM700FGFL - 7 Kg Full TF Glass |ESAWM700FGFL - 7 Kg Full TF Glass ",
+	"ESAWM800HTWB - 8 Kg Half TF Glass |ESAWM800HTWB - 8 Kg Half TF Glass",
+	"ESAWM800FGWP - 8 Kg Full TF Glass |ESAWM800FGWP - 8 Kg Full TF Glass ",
+	"ESAWM800FGBG - 8 Kg Full TF Glass|ESAWM800FGBG - 8 Kg Full TF Glass ",
+	"ESAWM800FTWB - 8 Kg Full TFGlass|ESAWM800FTWB - 8 Kg Full TF Glass",
+	"ESAWM850FGBG  - 8.5 Kg Full TF Glass|ESAWM850FGBG  - 8.5 Kg Full TF Glass",
+	"ESAWM850FTWB - 8.5 Kg Full TF Glass|ESAWM850FTWB - 8.5 Kg Full TF Glass",
+	"ESAWM900FGWB - 9 Kg Full TF Glass|ESAWM900FGWB - 9 Kg Full TF Glass",
+	"ESAWM100FGWB - 10 Kg Full TF Glass|ESAWM100FGWB - 10 Kg Full TF Glass",
+	"ESAWM100FGBG - 10 Kg Full TF Glass|ESAWM100FGBG - 10 Kg Full TF Glass",
+	"ESAWM100FTWB - 10 Kg Full TF Glass|ESAWM100FTWB - 10 Kg Full TF Glass",
 	];
 	product = displayProduct.value;    
     } 
 	else if(s1.value == "LED-TV"){
 		var optionArray = ["Select Model|Select Model",
-"32EL3303AYU2 - Cloud 512/8GB|32EL3303AYU2 - Cloud 512/8GB",
-"32EL3304AYU4 - Cloud 1GB|32EL3304AYU4 - Cloud 1GB",
-"32EL3404AYU4 - Android 1GB V/C|32EL3404AYU4 - Android 1GB V/C",
-"32EL3405AYU4 - HD Google 1.5GB Magic Rc|32EL3405AYU4 - HD Google 1.5GB Magic Rc",
-"32EL3406AYU6 - HD WebOS 1.5GB Magic RC|32EL3406AYU6 - HD WebOS 1.5GB Magic RC",
-"40EL4204AYU4 - Android 1GB V/C|40EL4204AYU4 - Android 1GB V/C",
-"43EL4304AYU4 - Cloud 1GB|43EL4304AYU4 - Cloud 1GB",
-"43EL4404AYU4 - Android 1GB V/C|43EL4404AYU4 - Android 1GB V/C",
-"43EL4405AYU6 - HD Google 1.5GB Magic Rc|43EL4405AYU6 - HD Google 1.5GB Magic Rc",
-"43EL4506AYU6 - HD WebOS 1.5GB Magic RC|43EL4506AYU6 - HD WebOS 1.5GB Magic RC",
-"43EL4304AZV4 - Android 1.5GB V/C|43EL4304AZV4 - Android 1.5GB V/C",
-"43EL4505AZV6 - HD Google 1.5GB Magic Rc|43EL4505AZV6 - HD Google 1.5GB Magic Rc",
-"43EL4506AZV6 - HD WebOS 1.5GB Magic RC|43EL4506AZV6 - HD WebOS 1.5GB Magic RC",
-"50EL5104AZV4 - Android 1.5GB V/C|50EL5104AZV4 - Android 1.5GB V/C",
-"50EL5105AZV6 - HD Google 1.5GB Magic Rc|50EL5105AZV6 - HD Google 1.5GB Magic Rc",
-"50EL5106AZV6 - HD WebOS 1.5GB Magic RC|50EL5106AZV6 - HD WebOS 1.5GB Magic RC",
-"55EL5505AZV6 - HD Google 1.5GB Magic Rc|55EL5505AZV6 - HD Google 1.5GB Magic Rc",
-"55EL5506AZV6 - HD WebOS 1.5GB Magic RC|55EL5506AZV6 - HD WebOS 1.5GB Magic RC",
-"65EL6505AZV6 - HD Google 1.5GB Magic Rc|65EL6505AZV6 - HD Google 1.5GB Magic Rc",
-"65EL6506AZV6 - HD WebOS 1.5GB Magic RC|65EL6506AZV6 - HD WebOS 1.5GB Magic RC",
-"75EL7506AZV6 - HD WebOS 1.5GB Magic RC|75EL7506AZV6 - HD WebOS 1.5GB Magic RC",
-"85EL8506AZV6 - HD WebOS 1.5GB Magic RC|85EL8506AZV6 - HD WebOS 1.5GB Magic RC",
-
-];
+		"32EL3303AYU2 - Cloud 512/8GB|32EL3303AYU2 - Cloud 512/8GB",
+		"32EL3304AYU4 - Cloud 1GB|32EL3304AYU4 - Cloud 1GB",
+		"32EL3404AYU4 - Android 1GB V/C|32EL3404AYU4 - Android 1GB V/C",
+		"32EL3405AYU4 - HD Google 1.5GB Magic Rc|32EL3405AYU4 - HD Google 1.5GB Magic Rc",
+		"32EL3406AYU6 - HD WebOS 1.5GB Magic RC|32EL3406AYU6 - HD WebOS 1.5GB Magic RC",
+		"40EL4204AYU4 - Android 1GB V/C|40EL4204AYU4 - Android 1GB V/C",
+		"43EL4304AYU4 - Cloud 1GB|43EL4304AYU4 - Cloud 1GB",
+		"43EL4404AYU4 - Android 1GB V/C|43EL4404AYU4 - Android 1GB V/C",
+		"43EL4405AYU6 - HD Google 1.5GB Magic Rc|43EL4405AYU6 - HD Google 1.5GB Magic Rc",
+		"43EL4506AYU6 - HD WebOS 1.5GB Magic RC|43EL4506AYU6 - HD WebOS 1.5GB Magic RC",
+		"43EL4304AZV4 - Android 1.5GB V/C|43EL4304AZV4 - Android 1.5GB V/C",
+		"43EL4505AZV6 - HD Google 1.5GB Magic Rc|43EL4505AZV6 - HD Google 1.5GB Magic Rc",
+		"43EL4506AZV6 - HD WebOS 1.5GB Magic RC|43EL4506AZV6 - HD WebOS 1.5GB Magic RC",
+		"50EL5104AZV4 - Android 1.5GB V/C|50EL5104AZV4 - Android 1.5GB V/C",
+		"50EL5105AZV6 - HD Google 1.5GB Magic Rc|50EL5105AZV6 - HD Google 1.5GB Magic Rc",
+		"50EL5106AZV6 - HD WebOS 1.5GB Magic RC|50EL5106AZV6 - HD WebOS 1.5GB Magic RC",
+		"55EL5505AZV6 - HD Google 1.5GB Magic Rc|55EL5505AZV6 - HD Google 1.5GB Magic Rc",
+		"55EL5506AZV6 - HD WebOS 1.5GB Magic RC|55EL5506AZV6 - HD WebOS 1.5GB Magic RC",
+		"65EL6505AZV6 - HD Google 1.5GB Magic Rc|65EL6505AZV6 - HD Google 1.5GB Magic Rc",
+		"65EL6506AZV6 - HD WebOS 1.5GB Magic RC|65EL6506AZV6 - HD WebOS 1.5GB Magic RC",
+		"75EL7506AZV6 - HD WebOS 1.5GB Magic RC|75EL7506AZV6 - HD WebOS 1.5GB Magic RC",
+		"85EL8506AZV6 - HD WebOS 1.5GB Magic RC|85EL8506AZV6 - HD WebOS 1.5GB Magic RC",
+		];
 		product = displayProduct.value;
        
 	} else if(s1.value == "Cooler"){
@@ -122,5 +118,6 @@ function Product_Name(s1,s2){
 function testing(){
 	alert("Dashboard Under Maintance! 🙂")
 }
+
 
 
