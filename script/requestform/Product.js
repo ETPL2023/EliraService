@@ -79,7 +79,9 @@ function Product_Name(s1,s2){
 		"ECL12BG03ASL - Drass Dlx 25 Ltr|ECL12BG03ASL - Drass Dlx 25 Ltr",
 				"-----|-----",		   
 		"ECL202810LTC - Super Sumo Dlx 100Ltr|ECL202810LTC - Super Sumo Dlx 100Ltr",
+		"ECL202811LTC - Super Sumo Dlx 110 Ltr|ECL202811LTC - Super Sumo Dlx 110 Ltr",
 		"ECL202810LTL - Super Sumo Dlx 100Ltr|ECL202810LTL - Super Sumo Dlx 100Ltr",
+		"ECL202811LTL - Super Sumo 110 Ltr|ECL202811LTL - Super Sumo 110 Ltr",
 		"ECL182880LTL - Sumo 85Ltr|ECL182880LTL - Sumo 85Ltr",
 		"ECL162870LTL - Event 70Ltr|ECL162870LTL - Event 70Ltr",
 		"ECL162885LTM - Swiss 85Ltr|ECL162885LTM - Swiss 85Ltr",
@@ -87,6 +89,8 @@ function Product_Name(s1,s2){
 		"ECL162855LTC -  Igor Dlx 55Ltr|ECL162855LTC -  Igor Dlx 55Ltr",
 		"ECL162875LTS - Candy Dlx 75Ltr|ECL162875LTS - Candy Dlx 75Ltr",
 		"ECL162855LTS - Candy 55Ltr|ECL162855LTS - Candy 55Ltr",
+
+
 		];
 		product = displayProduct.value;
 	}
@@ -118,6 +122,7 @@ function Product_Name(s1,s2){
 function testing(){
 	alert("Dashboard Under Maintance! 🙂")
 }
+
 
 
 
